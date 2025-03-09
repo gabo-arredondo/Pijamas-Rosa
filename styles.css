@@ -13,7 +13,7 @@ body {
 header {
   background-color: #f8d7e4; /* Rosa pastel */
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -52,7 +52,7 @@ header nav ul li a:hover {
 h2 {
   color: #f497b6; /* Rosa pastel oscuro */
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .promocion {
@@ -145,20 +145,20 @@ h2 {
 /* Footer */
 footer {
   background-color: #f8d7e4; /* Rosa pastel */
-  color: #fff;
+  color: #b0902b;
   text-align: center;
   padding: 1rem;
   margin-top: auto;
 }
 
 footer a {
-  color: #d4af37; /* Dorado */
+  color: #b0902b; /* Dorado */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #b0902b;
+  color: #c73686;
 }
 
 /* Responsivo */
