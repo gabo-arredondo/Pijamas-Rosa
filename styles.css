@@ -1,211 +1,199 @@
 /* Estilos generales */
 body {
-  margin: 0;
-  font-family: 'Courgette', sans-serif;
-  color: #333;
-  background-color: #fefefe;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin: 0; /* Quita los márgenes predeterminados del navegador */
+  font-family: 'Courgette', sans-serif; /* Aplica la fuente principal */
+  color: #333; /* Color del texto */
+  background-color: #fefefe; /* Color de fondo */
+  min-height: 100vh; /* La página ocupará al menos toda la altura de la ventana */
+  display: flex; /* Configura un diseño flexible */
+  flex-direction: column; /* Ordena los elementos en columna */
 }
 
-/* Header */
+/* Header: la cabecera fija con el logo y el menú */
 header {
-  background-color: #f8d7e4; /* Rosa pastel */
-  color: #fff;
-  padding: 2rem 4rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  background-color: #f8d7e4; /* Fondo rosa pastel */
+  color: #fff; /* Color del texto blanco */
+  padding: 2rem 4rem; /* Espaciado interno (vertical y horizontal) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  position: sticky; /* Hace que el header se quede fijo al hacer scroll */
+  top: 0; /* Se fija al borde superior */
+  z-index: 10; /* Asegura que esté por encima de otros elementos */
 }
 
 header .menu h1 {
-  font-size: 2.5rem;
-  color: #d4af37; /* Dorado */
-  text-transform: uppercase;
-  margin: 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 2.5rem; /* Tamaño del título */
+  color: #d4af37; /* Color dorado */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  margin: 0; /* Sin margen alrededor */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra en el texto para resaltar */
 }
 
 header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 1.5rem;
+  list-style: none; /* Quita los puntos de las listas */
+  margin: 0; /* Sin margen */
+  padding: 0; /* Sin relleno */
+  display: flex; /* Diseño en fila */
+  gap: 1.5rem; /* Espacio entre los elementos del menú */
 }
 
 header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  color: #fff; /* Color de los enlaces en blanco */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1rem; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+  transition: color 0.3s ease; /* Transición suave al cambiar de color */
 }
 
 header nav ul li a:hover {
-  color: #d4af37;
+  color: #d4af37; /* Cambia el color a dorado al pasar el mouse */
 }
 
 /* Secciones */
 h2 {
-  color: #f497b6; /* Rosa pastel oscuro */
-  text-align: center;
-  margin-bottom: 2rem;
+  color: #f497b6; /* Color rosa pastel oscuro */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 2rem; /* Espaciado inferior */
 }
 
 .promocion {
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: bold;
+  text-align: center; /* Centra el texto */
+  font-size: 1.2rem; /* Tamaño del texto ligeramente mayor */
+  font-weight: bold; /* Negrita */
 }
 
+/* Productos: Configuración de las tarjetas de producto */
 .productos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  justify-items: center;
-  padding: 2rem;
+  display: grid; /* Diseño en rejilla */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Columnas adaptables */
+  gap: 2rem; /* Espacio entre productos */
+  justify-items: center; /* Centra las tarjetas en la rejilla */
+  padding: 2rem; /* Relleno interno */
 }
 
 .producto {
-  background-color: #fff;
-  border: 1px solid #f4cdd4;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #f4cdd4; /* Borde rosa claro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 1rem; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+  width: 250px; /* Ancho fijo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al interactuar */
 }
 
 .producto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Eleva la tarjeta al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 .producto img {
-  width: 100%;
-  border-radius: 10px;
+  width: 100%; /* Imagen se adapta al ancho */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 .producto select {
-  margin-top: 0.5rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  width: 100%;
+  margin-top: 0.5rem; /* Espacio superior */
+  padding: 0.5rem; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #ddd; /* Borde gris claro */
+  width: 100%; /* Ancho completo */
 }
 
 .producto button {
-  background-color: #d4af37;
-  color: #fff;
-  border: none;
-  padding: 0.7rem 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  transition: background-color 0.3s ease;
+  background-color: #d4af37; /* Fondo dorado */
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 0.7rem 1.2rem; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a "puntero" */
+  font-size: 1rem; /* Tamaño del texto */
+  margin-top: 0.5rem; /* Espaciado superior */
+  transition: background-color 0.3s ease; /* Transición suave en el color */
 }
 
 .producto button:hover {
-  background-color: #b0902b;
+  background-color: #b0902b; /* Fondo dorado más oscuro al pasar el mouse */
 }
 
 .producto h3 {
-  font-size: 1.5rem;
-  color: #f497b6;
+  font-size: 1.5rem; /* Tamaño del título */
+  color: #f497b6; /* Color rosa pastel oscuro */
 }
 
 .producto p {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
+  font-size: 1.2rem; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+  color: #333; /* Color gris oscuro */
 }
 
-.producto button {
-  background-color: #d4af37; /* Dorado */
-  color: #fff;
-  border: none;
-  padding: 0.7rem 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  transition: background-color 0.3s ease;
-}
-
-.producto button:hover {
-  background-color: #b0902b;
-}
-
-/* Footer */
+/* Footer: pie de página */
 footer {
-  background-color: #f8d7e4; /* Rosa pastel */
-  color: #b0902b;
-  text-align: center;
-  padding: 1rem;
-  margin-top: auto;
+  background-color: #f8d7e4; /* Fondo rosa pastel */
+  color: #b0902b; /* Texto dorado */
+  text-align: center; /* Centra el contenido */
+  padding: 1rem; /* Espaciado interno */
+  margin-top: auto; /* Empuja el footer hacia abajo */
 }
 
 footer a {
-  color: #b0902b; /* Dorado */
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: #b0902b; /* Color dorado */
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s ease; /* Transición suave */
 }
 
 footer a:hover {
-  color: #c73686;
+  color: #c73686; /* Cambia a un tono más oscuro al pasar el mouse */
 }
 
-/* Responsivo */
+/* Responsivo: estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
   header nav ul {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: column; /* Menú vertical */
+    gap: 1rem; /* Espaciado entre enlaces */
   }
 
   .producto {
-    width: 90%;
+    width: 90%; /* Ancho ajustado */
   }
 }
 
-/* Estilo general del modal */
+/* Modal: diseño emergente */
 .modal {
   display: none; /* Oculto por defecto */
-  position: fixed;
-  top: 0;
+  position: fixed; /* Posición fija */
+  top: 0; /* Al inicio de la ventana */
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+  width: 100%; /* Ocupa todo el ancho */
+  height: 100%; /* Ocupa toda la altura */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  z-index: 1000; /* Por encima de otros elementos */
 }
 
 /* Contenido del modal */
 .modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  width: 80%;
-  max-width: 400px;
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.3s ease;
+  background-color: #fff; /* Fondo blanco */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center; /* Centra el contenido */
+  width: 80%; /* Ocupa el 80% del ancho */
+  max-width: 400px; /* Máximo ancho fijo */
+  position: relative; /* Posiciona dentro del modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  animation: fadeIn 0.3s ease; /* Animación de entrada */
 }
 
 /* Botón de cierre */
 .close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #333;
+  position: absolute; /* Posición dentro del modal */
+  top: 10px; /* Desde el borde superior */
+  right: 15px; /* Desde el borde derecho */
+  font-size: 1.5rem; /* Tamaño del botón */
+  cursor: pointer; /* Cambia el cursor */
+  color: #333; /* Color del texto */
 }

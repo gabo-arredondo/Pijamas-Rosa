@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+  <!-- Elemento raíz del documento HTML. El atributo "lang" especifica el idioma del contenido (español). -->
+
   <head>
+    <!-- Contiene información meta y enlaces externos que no se muestran directamente en la página. -->
+
     <meta charset="UTF-8" />
+    <!-- Configura la codificación de caracteres como UTF-8, lo que permite mostrar caracteres especiales correctamente. -->
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <!-- Hace que la página sea responsive ajustándola al ancho de la pantalla del dispositivo. -->
+
     <meta
       name="description"
       content="Rosa Polar: Tienda de pijamas cómodas y modernas para toda la familia."
     />
+    <!-- Describe el contenido del sitio web para motores de búsqueda y redes sociales. -->
+
     <title>Pijamas Rosa Polar | Tu Comodidad en Casa</title>
+    <!-- Define el texto que aparecerá en la pestaña del navegador. -->
+
     <link
       rel="icon"
       type="image/jpg"
       href="img/icono-pagina.jpg"
     />
+    <!-- Vincula un ícono personalizado para la pestaña del navegador (favicon). -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
       rel="stylesheet"
     />
+    <!-- Importa la fuente "Courgette" desde Google Fonts para usarla en el diseño de texto. -->
+
     <link
       rel="stylesheet"
       href="styles.css"
     />
+    <!-- Vincula el archivo externo de estilos CSS que define la apariencia de la página. -->
   </head>
+
   <body>
+    <!-- Contenido principal que se muestra en el navegador. -->
+
     <header>
+      <!-- Sección del encabezado que incluye el nombre de la tienda y el menú de navegación. -->
       <div class="menu">
+        <!-- Contenedor para el menú y el título. -->
         <h1>Rosa Polar</h1>
+        <!-- Título principal que representa el nombre de la tienda. -->
         <nav>
+          <!-- Elemento que agrupa los enlaces de navegación. -->
           <ul>
+            <!-- Lista de enlaces de navegación. -->
             <li><a href="#productos">Productos</a></li>
+            <!-- Enlace que lleva a la sección de productos. -->
             <li><a href="#ofertas">Ofertas</a></li>
+            <!-- Enlace que lleva a la sección de ofertas. -->
             <li>
               <a
                 href="#"
@@ -40,6 +67,7 @@
                 >Contacto</a
               >
             </li>
+            <!-- Enlace que abre el modal de información de contacto. -->
           </ul>
         </nav>
       </div>
@@ -49,43 +77,64 @@
       class="modal"
       id="contact-modal"
     >
+      <!-- Modal que muestra información de contacto al usuario. -->
       <div class="modal-content">
+        <!-- Contenedor del contenido principal del modal. -->
         <span
           class="close"
           id="close-modal"
           >&times;</span
         >
+        <!-- Icono para cerrar el modal. -->
         <h2>Contacto</h2>
+        <!-- Encabezado dentro del modal. -->
         <p>Email: rosapalominop@gmail.com</p>
+        <!-- Parágrafo con la dirección de correo electrónico. -->
         <p>Teléfono: +51 928 481 377</p>
+        <!-- Parágrafo con el número de teléfono. -->
         <p>Dirección: Calle Corales 183, Callao, Perú</p>
+        <!-- Parágrafo con la dirección física. -->
       </div>
     </div>
 
     <main>
+      <!-- Contenedor principal del contenido de la página. -->
+
       <section id="productos">
+        <!-- Sección dedicada a los productos. -->
         <h2>Nuestros Productos</h2>
+        <!-- Título de la sección. -->
+
         <div class="productos">
-          <!-- Repetimos el siguiente bloque para cada pijama -->
+          <!-- Contenedor de los bloques individuales de productos. -->
+
+          <!-- Repetición de un bloque de producto con sus detalles. -->
           <div class="producto">
             <img
               src="img/pijama11.jpg"
               alt="Pijama cómoda"
             />
+            <!-- Imagen representativa del producto. -->
             <h3>Pijama Polar Rosa</h3>
+            <!-- Nombre del producto. -->
             <p>S/ 27.00</p>
+            <!-- Precio del producto. -->
             <label for="talla-pijama1">Talla:</label>
+            <!-- Etiqueta que describe el selector de tallas. -->
             <select
               id="talla-pijama1"
               name="talla"
             >
+              <!-- Selector de tallas disponibles para el producto. -->
               <option value="S">Small (S)</option>
               <option value="M">Medium (M)</option>
               <option value="L">Large (L)</option>
             </select>
             <button>Comprar</button>
+            <!-- Botón para iniciar la compra. -->
           </div>
-          <!-- Ejemplo con otros modelos -->
+
+          <!-- Bloques adicionales para otros productos, siguiendo el mismo formato. -->
           <div class="producto">
             <img
               src="img/pijama11.jpg"
@@ -104,6 +153,7 @@
             </select>
             <button>Comprar</button>
           </div>
+
           <div class="producto">
             <img
               src="img/pijama11.jpg"
@@ -140,11 +190,15 @@
               <option value="L">Large (L)</option>
             </select>
             <button>Comprar</button>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
+      <!-- Pie de página que contiene información legal y enlaces a redes sociales. -->
       <p>© 2025 Rosa Polar. Todos los derechos reservados.</p>
+      <!-- Aviso de derechos reservados. -->
       <p>
         Visítanos en nuestras redes sociales:
         <a
@@ -152,14 +206,18 @@
           target="_blank"
           >Facebook</a
         >
+        <!-- Enlace externo a Facebook. -->
         |
         <a
           href="https://www.instagram.com/jesus_gap05/"
           target="_blank"
           >Instagram</a
         >
+        <!-- Enlace externo a Instagram. -->
       </p>
     </footer>
+
     <script src="app.js"></script>
+    <!-- Vincula el archivo externo de JavaScript que contiene la lógica de interacción. -->
   </body>
 </html>
